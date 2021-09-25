@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Creational/singleton/singleton.hpp"
-#include "Creational/prototype/prototype.hpp"
+#include <singleton.hpp>
+#include <prototype.hpp>
 
 using namespace std;
 
