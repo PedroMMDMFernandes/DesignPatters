@@ -15,6 +15,8 @@ set(DESIGNPATTERNS_SOURCES
 option(USE_SINGLETON "Use singleton Design Pattern" ON)
 
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/Creational)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/Structural)
+#add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/Behavioral)
 
 if(USE_SINGLETON)
     
@@ -36,6 +38,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     FACTORY
     BUILDER
     ABSTRACTFACTORY
+    ADAPTER
 )
 
 #specify install Target

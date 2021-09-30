@@ -4,6 +4,7 @@
 #include <factory.hpp>
 #include <builder.hpp>
 #include <abstractFactory.hpp>
+#include <adapter.hpp>
 
 using namespace std;
 
@@ -33,11 +34,16 @@ int main ()
     BuilderDP::Main BuilderDP;
     BuilderDP.execute();
 
-    cout<<endl;
-
+    
     cout<<"Abstract Factory Pattern"<<endl;
     AbstractFactoryDP::Main abstractFactory;
     abstractFactory.execute();
+
+    cout<<endl;
+
+    cout<<"Adapter Pattern"<<endl;
+    AdapterDP::Main adapter;
+    adapter.execute();
 
     cout<<endl;
 
