@@ -8,7 +8,6 @@ namespace FactoryDP {
 
     Product::~Product()
     {
-        std::cout<<"Product do stuff\n";
     }
 
     void Product::doStuff()
@@ -54,9 +53,8 @@ namespace FactoryDP {
     {
         Product* product = this->createProduct();
 
-        std::cout<<"Creator's code juts worked with:";
+        std::cout<<"Creator's code just worked with:";
         product->doStuff();
-        std::cout<<"\n";
 
         delete product;
     }
