@@ -35,6 +35,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     PROTOTYPE 
     FACTORY
     BUILDER
+    ABSTRACTFACTORY
 )
 
 #specify install Target
