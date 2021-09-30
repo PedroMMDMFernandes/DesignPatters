@@ -34,6 +34,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     SINGLETON 
     PROTOTYPE 
     FACTORY
+    BUILDER
 )
 
 #specify install Target
