@@ -30,7 +30,11 @@ target_include_directories(DesignPatterns PRIVATE
                            Creational
                            )
 
-target_link_libraries(${PROJECT_NAME} PUBLIC SINGLETON PROTOTYPE)
+target_link_libraries(${PROJECT_NAME} PUBLIC 
+    SINGLETON 
+    PROTOTYPE 
+    FACTORY
+)
 
 #specify install Target
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
