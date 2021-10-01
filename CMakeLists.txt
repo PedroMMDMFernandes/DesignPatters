@@ -39,6 +39,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     BUILDER
     ABSTRACTFACTORY
     ADAPTER
+    BRIDGE
+    COMPOSITE
 )
 
 #specify install Target

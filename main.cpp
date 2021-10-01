@@ -5,6 +5,8 @@
 #include <builder.hpp>
 #include <abstractFactory.hpp>
 #include <adapter.hpp>
+#include <bridge.hpp>
+#include <composite.hpp>
 
 using namespace std;
 
@@ -44,6 +46,18 @@ int main ()
     cout<<"Adapter Pattern"<<endl;
     AdapterDP::Main adapter;
     adapter.execute();
+
+    cout<<endl;
+
+    cout<<"Bridge Pattern"<<endl;
+    BridgeDP::Main bridge;
+    bridge.execute();
+
+    cout<<endl;
+
+    cout<<"Composite Pattern"<<endl;
+    CompositeDP::Main composite;
+    composite.execute();
 
     cout<<endl;
 
