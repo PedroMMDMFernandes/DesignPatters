@@ -41,6 +41,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     ADAPTER
     BRIDGE
     COMPOSITE
+    DECORATOR
+    FACADE
 )
 
 #specify install Target

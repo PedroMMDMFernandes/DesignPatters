@@ -7,6 +7,9 @@
 #include <adapter.hpp>
 #include <bridge.hpp>
 #include <composite.hpp>
+#include <decorator.hpp>
+#include <facade.hpp>
+
 
 using namespace std;
 
@@ -58,6 +61,16 @@ int main ()
     cout<<"Composite Pattern"<<endl;
     CompositeDP::Main composite;
     composite.execute();
+
+    cout<<endl;
+
+    cout<<"Decorator Pattern"<<endl;
+    DecoratorDP::executeStatic();
+
+    cout<<endl;
+
+    cout<<"Facade Pattern"<<endl;
+    FacadeDP::Execute();
 
     cout<<endl;
 
