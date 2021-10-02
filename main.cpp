@@ -9,6 +9,7 @@
 #include <composite.hpp>
 #include <decorator.hpp>
 #include <facade.hpp>
+#include <flyweight.hpp>
 
 
 using namespace std;
@@ -71,6 +72,11 @@ int main ()
 
     cout<<"Facade Pattern"<<endl;
     FacadeDP::Execute();
+
+    cout<<endl;
+
+    cout<<"Flyweight Pattern\n";
+    FlyweightDP::Execute();
 
     cout<<endl;
 

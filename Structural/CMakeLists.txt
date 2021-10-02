@@ -5,6 +5,7 @@ add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/bridge)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/composite)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/decorator)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/facade)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/flyweight)
 
 
 
