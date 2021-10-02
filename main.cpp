@@ -10,6 +10,7 @@
 #include <decorator.hpp>
 #include <facade.hpp>
 #include <flyweight.hpp>
+#include <proxy.hpp>
 
 
 using namespace std;
@@ -77,6 +78,12 @@ int main ()
 
     cout<<"Flyweight Pattern\n";
     FlyweightDP::Execute();
+
+    cout<<endl;
+    cout<<endl;
+
+    cout<<"Proxy Pattern\n";
+    ProxyDP::Execute();
 
     cout<<endl;
 

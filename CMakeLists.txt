@@ -44,6 +44,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     DECORATOR
     FACADE
     FLYWEIGHT
+    PROXY
 )
 
 #specify install Target
