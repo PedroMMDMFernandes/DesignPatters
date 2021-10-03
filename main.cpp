@@ -11,6 +11,7 @@
 #include <facade.hpp>
 #include <flyweight.hpp>
 #include <proxy.hpp>
+#include <chainOfResponsability.hpp>
 
 
 using namespace std;
@@ -79,11 +80,16 @@ int main ()
     cout<<"Flyweight Pattern\n";
     FlyweightDP::Execute();
 
-    cout<<endl;
+    cout<<"\n";
     cout<<endl;
 
     cout<<"Proxy Pattern\n";
     ProxyDP::Execute();
+
+    cout<<endl;
+
+    cout<<"Chain of Respopnsability Pattern\n";
+    ChainOfResponsabilityDP::Execute();
 
     cout<<endl;
 
