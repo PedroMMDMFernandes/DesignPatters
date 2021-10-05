@@ -49,6 +49,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     COMMAND
     ITERATOR
     MEDIATOR
+    MEMENTO
 )
 
 #specify install Target

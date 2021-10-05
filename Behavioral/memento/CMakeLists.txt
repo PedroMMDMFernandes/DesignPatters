@@ -1,19 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(SINGLETON_SOURCES
-    singleton.cpp
+set(MEMENTO_SOURCES
+    memento.cpp
 )
 
-set(
-    singleton.hpp
+set(MEMENTO_HEADERS
+    memento.hpp
 )
 
-add_library(SINGLETON ${SINGLETON_SOURCES} ${SINGLETON_HEADERS})
+add_library(MEMENTO ${MEMENTO_SOURCES} ${MEMENTO_HEADERS})
 
-target_include_directories(SINGLETON
+target_include_directories(MEMENTO
           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
           )
 
-install(TARGETS SINGLETON DESTINATION lib)
-install(FILES ${SINGLETON_HEADERS} DESTINATION include)
+install(TARGETS MEMENTO DESTINATION lib)
+install(FILES ${MEMENTO_HEADERS} DESTINATION include)
 

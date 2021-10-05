@@ -15,6 +15,7 @@
 #include <command.hpp>
 #include <iterator.hpp>
 #include <mediator.hpp>
+#include <memento.hpp>
 
 
 using namespace std;
@@ -107,6 +108,11 @@ int main ()
 
     cout<<"Mediator Pattern\n";
     MediatorDP::Execute();
+
+    cout<<endl;
+
+    cout<<"Memento Pattern\n";
+    MementoDP::Execute();
 
     cout<<endl;
 
