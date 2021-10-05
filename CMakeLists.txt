@@ -46,6 +46,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     FLYWEIGHT
     PROXY
     CHAINOFRESPONSABILITY
+    COMMAND
+    ITERATOR
 )
 
 #specify install Target

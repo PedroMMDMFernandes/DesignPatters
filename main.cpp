@@ -12,6 +12,8 @@
 #include <flyweight.hpp>
 #include <proxy.hpp>
 #include <chainOfResponsability.hpp>
+#include <command.hpp>
+#include <iterator.hpp>
 
 
 using namespace std;
@@ -42,7 +44,6 @@ int main ()
     BuilderDP::Main BuilderDP;
     BuilderDP.execute();
 
-    
     cout<<"Abstract Factory Pattern"<<endl;
     AbstractFactoryDP::Main abstractFactory;
     abstractFactory.execute();
@@ -90,6 +91,16 @@ int main ()
 
     cout<<"Chain of Respopnsability Pattern\n";
     ChainOfResponsabilityDP::Execute();
+
+    cout<<endl;
+
+    cout<<"Command Pattern\n";
+    CommandDP::Execute();
+
+    cout<<endl;
+
+    cout<<"Iterator Pattern\n";
+    IteratorDP::Execute();
 
     cout<<endl;
 
