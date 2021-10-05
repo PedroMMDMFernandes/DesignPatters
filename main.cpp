@@ -14,6 +14,7 @@
 #include <chainOfResponsability.hpp>
 #include <command.hpp>
 #include <iterator.hpp>
+#include <mediator.hpp>
 
 
 using namespace std;
@@ -101,6 +102,11 @@ int main ()
 
     cout<<"Iterator Pattern\n";
     IteratorDP::Execute();
+
+    cout<<endl;
+
+    cout<<"Mediator Pattern\n";
+    MediatorDP::Execute();
 
     cout<<endl;
 

@@ -1,19 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(SINGLETON_SOURCES
-    singleton.cpp
+set(MEDIATOR_SOURCES
+    mediator.cpp
 )
 
 set(
-    singleton.hpp
+    mediator.hpp
 )
 
-add_library(SINGLETON ${SINGLETON_SOURCES} ${SINGLETON_HEADERS})
+add_library(MEDIATOR ${MEDIATOR_SOURCES} ${MEDIATOR_HEADERS})
 
-target_include_directories(SINGLETON
+target_include_directories(MEDIATOR
           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
           )
 
-install(TARGETS SINGLETON DESTINATION lib)
-install(FILES ${SINGLETON_HEADERS} DESTINATION include)
+install(TARGETS MEDIATOR DESTINATION lib)
+install(FILES ${MEDIATOR_HEADERS} DESTINATION include)
 

@@ -48,6 +48,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     CHAINOFRESPONSABILITY
     COMMAND
     ITERATOR
+    MEDIATOR
 )
 
 #specify install Target
