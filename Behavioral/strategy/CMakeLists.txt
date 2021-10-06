@@ -1,19 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(SINGLETON_SOURCES
-    singleton.cpp
+set(STRATEGY_SOURCES
+    strategy.cpp
 )
 
 set(
-    singleton.hpp
+    strategy .hpp
 )
 
-add_library(SINGLETON ${SINGLETON_SOURCES} ${SINGLETON_HEADERS})
+add_library(STRATEGY ${STRATEGY_SOURCES} ${STRATEGY_HEADERS})
 
-target_include_directories(SINGLETON
+target_include_directories(STRATEGY
           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
           )
 
-install(TARGETS SINGLETON DESTINATION lib)
-install(FILES ${SINGLETON_HEADERS} DESTINATION include)
+install(TARGETS STRATEGY DESTINATION lib)
+install(FILES ${STRATEGY_HEADERS} DESTINATION include)
 

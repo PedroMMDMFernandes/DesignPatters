@@ -1,19 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(SINGLETON_SOURCES
-    singleton.cpp
+set(OBSERVER_SOURCES
+    observer.cpp
 )
 
 set(
-    singleton.hpp
+    observer.hpp
 )
 
-add_library(SINGLETON ${SINGLETON_SOURCES} ${SINGLETON_HEADERS})
+add_library(OBSERVER ${OBSERVER_SOURCES} ${OBSERVER_HEADERS})
 
-target_include_directories(SINGLETON
+target_include_directories(OBSERVER
           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
           )
 
-install(TARGETS SINGLETON DESTINATION lib)
-install(FILES ${SINGLETON_HEADERS} DESTINATION include)
+install(TARGETS OBSERVER DESTINATION lib)
+install(FILES ${OBSERVER_HEADERS} DESTINATION include)
 
