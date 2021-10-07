@@ -16,13 +16,14 @@
 #include <iterator.hpp>
 #include <mediator.hpp>
 #include <memento.hpp>
+#include <observer.hpp>
 
 
 using namespace std;
 
 int main ()
 {
-    cout<<"Singleton Pattern"<<endl;
+    /*cout<<"Singleton Pattern"<<endl;
 
     SingletonDP::Main singletonDP;
     singletonDP.execute(); 
@@ -113,6 +114,11 @@ int main ()
 
     cout<<"Memento Pattern\n";
     MementoDP::Execute();
+
+    cout<<endl;*/
+
+    cout<<"Observer Pattern\n";
+    ObserverDP::Execute();
 
     cout<<endl;
 
