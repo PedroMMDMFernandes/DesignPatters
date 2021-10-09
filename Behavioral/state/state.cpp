@@ -23,8 +23,8 @@ namespace StateDP
     {
         std::cout << "ConcreteStateA request 1\n";
         std::cout << "ConcreteStateA wants to change the state of the context.\n";
-
-        this->context->TransitionTo(new ConcreteStateB);
+    std::unique_ptr<ConcreteStateA> A (new ConcreteStateA) ;
+        this->context->TransitionTo(A.get());
     }
 
     void ConcreteStateA::Request2()
@@ -49,7 +49,8 @@ namespace StateDP
     {
         std::cout << "ConcreteStateB request 2\n";
         std::cout << "ConcreteStateB wants to change to context's state\n";
-        this->context->TransitionTo(new ConcreteStateA);
+        std::unique_ptr<ConcreteStateA> A (new ConcreteStateA) ;
+        this->context->TransitionTo(A.get());
     }
 
     Context::Context(State &state)
