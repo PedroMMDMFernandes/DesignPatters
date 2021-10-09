@@ -51,6 +51,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     MEDIATOR
     MEMENTO
     OBSERVER
+    STATE
 )
 
 #specify install Target

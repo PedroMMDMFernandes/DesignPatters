@@ -17,6 +17,7 @@
 #include <mediator.hpp>
 #include <memento.hpp>
 #include <observer.hpp>
+#include <state.hpp>
 
 
 using namespace std;
@@ -119,6 +120,11 @@ int main ()
 
     cout<<"Observer Pattern\n";
     ObserverDP::Execute();
+
+    cout<<endl;
+
+    cout<<"State Pattern\n";
+    StateDP::Execute();
 
     cout<<endl;
 
