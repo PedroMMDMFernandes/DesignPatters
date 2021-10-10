@@ -23,8 +23,8 @@ namespace StateDP
     {
         std::cout << "ConcreteStateA request 1\n";
         std::cout << "ConcreteStateA wants to change the state of the context.\n";
-    std::unique_ptr<ConcreteStateA> A (new ConcreteStateA) ;
-        this->context->TransitionTo(A.get());
+    //std::unique_ptr<ConcreteStateA> A (new ConcreteStateA) ;
+        this->context->TransitionTo(new ConcreteStateA);
     }
 
     void ConcreteStateA::Request2()
@@ -49,8 +49,8 @@ namespace StateDP
     {
         std::cout << "ConcreteStateB request 2\n";
         std::cout << "ConcreteStateB wants to change to context's state\n";
-        std::unique_ptr<ConcreteStateA> A (new ConcreteStateA) ;
-        this->context->TransitionTo(A.get());
+        std::unique_ptr<ConcreteStateB> B (new ConcreteStateB) ;
+        this->context->TransitionTo(B.get());
     }
 
     Context::Context(State &state)
@@ -61,6 +61,7 @@ namespace StateDP
 
     Context::~Context()
     {
+        delete this->state;
     }
 
     void Context::TransitionTo(State *state)
@@ -69,7 +70,7 @@ namespace StateDP
 
         if (this->state != nullptr)
         {
-            //delete this->state;
+            delete this->state;
         }
 
         this->state = state;
@@ -88,9 +89,9 @@ namespace StateDP
 
     void Execute()
     {
-        ConcreteStateA state;
+        State* state = new ConcreteStateA;
 
-        Context context(state);
+        Context context(*state);
 
         context.Request1();
         context.Request2();

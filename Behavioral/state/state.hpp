@@ -1,3 +1,6 @@
+#ifndef STATE_HPP
+#define STATE_HPP
+
 #include <iostream>
 
 namespace StateDP
@@ -66,3 +69,5 @@ namespace StateDP
     void Execute();
 
 }
+
+#endif
