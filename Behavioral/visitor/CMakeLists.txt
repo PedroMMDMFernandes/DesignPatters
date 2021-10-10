@@ -1,19 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(TEMPLATE_SOURCES
-    template.cpp
+set(VISITOR_SOURCES
+    visitor.cpp
 )
 
 set(
-    template.hpp
+    visitor.hpp
 )
 
-add_library(TEMPLATE ${TEMPLATE_SOURCES} ${TEMPLATE_HEADERS})
+add_library(VISITOR ${VISITOR_SOURCES} ${VISITOR_HEADERS})
 
-target_include_directories(TEMPLATE
+target_include_directories(VISITOR
           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
           )
 
-install(TARGETS TEMPLATE DESTINATION lib)
-install(FILES ${TEMPLATE_HEADERS} DESTINATION include)
+install(TARGETS VISITOR DESTINATION lib)
+install(FILES ${VISITOR_HEADERS} DESTINATION include)
 

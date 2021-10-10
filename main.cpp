@@ -20,6 +20,7 @@
 #include <state.hpp>
 #include <strategy.hpp>
 #include <template.hpp>
+#include <visitor.hpp>
 
 using namespace std;
 
@@ -136,6 +137,11 @@ int main()
 
     cout << "Template Pattern\n";
     TemplateDP::Execute();
+
+    cout << endl;
+
+    cout << "Visitor Pattern\n";
+    VisitorDP::Execute();
 
     cout << endl;
 
