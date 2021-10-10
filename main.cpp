@@ -18,117 +18,122 @@
 #include <memento.hpp>
 #include <observer.hpp>
 #include <state.hpp>
-
+#include <strategy.hpp>
 
 using namespace std;
 
-int main ()
+int main()
 {
-    cout<<"Singleton Pattern"<<endl;
+    cout << "Singleton Pattern" << endl;
 
     SingletonDP::Main singletonDP;
-    singletonDP.execute(); 
+    singletonDP.execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Prototype Pattern"<<endl;
+    cout << "Prototype Pattern" << endl;
 
     PrototypeDP::Main prototypeDP;
     prototypeDP.execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Factory Pattern"<<endl;
+    cout << "Factory Pattern" << endl;
 
     FactoryDP::Main factoryDP;
     factoryDP.execute();
 
-    cout<<"Builder Pattern"<<endl;
+    cout << "Builder Pattern" << endl;
 
     BuilderDP::Main BuilderDP;
     BuilderDP.execute();
 
-    cout<<"Abstract Factory Pattern"<<endl;
+    cout << "Abstract Factory Pattern" << endl;
     AbstractFactoryDP::Main abstractFactory;
     abstractFactory.execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Adapter Pattern"<<endl;
+    cout << "Adapter Pattern" << endl;
     AdapterDP::Main adapter;
     adapter.execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Bridge Pattern"<<endl;
+    cout << "Bridge Pattern" << endl;
     BridgeDP::Main bridge;
     bridge.execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Composite Pattern"<<endl;
+    cout << "Composite Pattern" << endl;
     CompositeDP::Main composite;
     composite.execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Decorator Pattern"<<endl;
+    cout << "Decorator Pattern" << endl;
     DecoratorDP::executeStatic();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Facade Pattern"<<endl;
+    cout << "Facade Pattern" << endl;
     FacadeDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Flyweight Pattern\n";
+    cout << "Flyweight Pattern\n";
     FlyweightDP::Execute();
 
-    cout<<"\n";
-    cout<<endl;
+    cout << "\n";
+    cout << endl;
 
-    cout<<"Proxy Pattern\n";
+    cout << "Proxy Pattern\n";
     ProxyDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Chain of Respopnsability Pattern\n";
+    cout << "Chain of Respopnsability Pattern\n";
     ChainOfResponsabilityDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Command Pattern\n";
+    cout << "Command Pattern\n";
     CommandDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Iterator Pattern\n";
+    cout << "Iterator Pattern\n";
     IteratorDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Mediator Pattern\n";
+    cout << "Mediator Pattern\n";
     MediatorDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Memento Pattern\n";
+    cout << "Memento Pattern\n";
     MementoDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Observer Pattern\n";
+    cout << "Observer Pattern\n";
     ObserverDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    cout<<"State Pattern\n";
+    cout << "State Pattern\n";
     StateDP::Execute();
 
-    cout<<endl;
+    cout << endl;
 
-    std::cout<<"End";
+    cout << "Srategy Pattern\n";
+    StrategyDP::Execute();
+
+    cout << endl;
+
+    std::cout << "End";
 
     return 0;
 }
