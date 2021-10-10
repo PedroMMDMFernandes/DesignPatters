@@ -53,6 +53,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     OBSERVER
     STATE
     STRATEGY
+    TEMPLATE
+    VISITOR
 )
 
 #specify install Target

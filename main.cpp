@@ -19,6 +19,7 @@
 #include <observer.hpp>
 #include <state.hpp>
 #include <strategy.hpp>
+#include <template.hpp>
 
 using namespace std;
 
@@ -130,6 +131,11 @@ int main()
 
     cout << "Srategy Pattern\n";
     StrategyDP::Execute();
+
+    cout << endl;
+
+    cout << "Template Pattern\n";
+    TemplateDP::Execute();
 
     cout << endl;
 
