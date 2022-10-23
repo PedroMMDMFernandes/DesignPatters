@@ -2,6 +2,7 @@
 #define STATE_HPP
 
 #include <iostream>
+#include <memory>
 
 namespace StateDP
 {

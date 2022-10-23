@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
 set(PROTOTYPE_SOURCES
-    PROTOTYPE.cpp
+    prototype.cpp
 )
 
 set(PROTOTYPE_HEADERS
-    PROTOTYPE.hpp
+    prototype.hpp
 )
 
 add_library(PROTOTYPE ${PROTOTYPE_SOURCES} ${PROTOTYPE_HEADERS})

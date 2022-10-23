@@ -10,7 +10,7 @@ namespace IteratorDP
         typedef typename std::vector<T>::iterator iter_type;
         ~Iterator();
 
-        Iterator::Iterator(U *p_data, bool reverse = false)
+        Iterator(U *p_data, bool reverse = false)
             : m_p_data(p_data)
         {
             it = m_p_data->m_data.begin();

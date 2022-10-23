@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
 set(COMMAND_SOURCES
-    Command.cpp
+    command.cpp
 )
 
 set(
-    Command.hpp
+    command.hpp
 )
 
 add_library(COMMAND ${COMMAND_SOURCES} ${COMMAND_HEADERS})
