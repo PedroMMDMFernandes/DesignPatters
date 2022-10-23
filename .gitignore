@@ -33,3 +33,10 @@
 
 #ignoring directories
 build/
+.obsidian/
+.vscode/
+
+# CMake generated files
+CMakeFiles/
+*.ninja*
+*.cmake
