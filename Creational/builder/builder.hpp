@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 
-
 namespace BuilderDP
 {
     class Builder
@@ -18,11 +17,10 @@ namespace BuilderDP
         virtual void buildStepA() const = 0;
         virtual void buildStepB() const = 0;
         virtual void buildStepC() const = 0;
+
     private:
-        
     };
 
-    
     class Product1
     {
     public:
@@ -35,7 +33,8 @@ namespace BuilderDP
 
         void setParts(std::string part);
         void listParts();
-    
+        std::vector<std::string> getParts();
+
     private:
         std::vector<std::string> product_parts;
     };
@@ -52,14 +51,12 @@ namespace BuilderDP
 
         void listParts();
         void setParts();
-    
+
     private:
         std::vector<std::string> product_parts;
     };
-    
 
-    
-    class ConcreteBuilder1: public Builder
+    class ConcreteBuilder1 : public Builder
     {
     public:
         ConcreteBuilder1();
@@ -74,14 +71,13 @@ namespace BuilderDP
         void buildStepB() const override;
         void buildStepC() const override;
 
-        Product1* getResult();
-    
-    private:
-        Product1* result;
-    };
-    
+        Product1 *getResult();
 
-    class ConcreteBuilder2: public Builder
+    private:
+        Product1 *result;
+    };
+
+    class ConcreteBuilder2 : public Builder
     {
     public:
         ConcreteBuilder2();
@@ -96,36 +92,36 @@ namespace BuilderDP
         void buildStepB() const override;
         void buildStepC() const override;
 
-        Product2* getResult();
-    
+        Product2 *getResult();
+
     private:
-       Product2* result; 
+        Product2 *result;
     };
 
     typedef enum
     {
         simple = 0,
         complex
-    }BuilderType;
+    } BuilderType;
 
     class Director
     {
     public:
-        Director(Builder* builder);
+        Director(Builder *builder);
         Director(Director &&) = default;
         Director(const Director &) = default;
         Director &operator=(Director &&) = default;
         Director &operator=(const Director &) = default;
         ~Director();
 
-        void changeBuilder(Builder& builder);
+        void changeBuilder(Builder &builder);
 
         void make(BuilderType type);
-    
+
     private:
-       Builder* builder;
+        Builder *builder;
     };
-    
+
     class Main
     {
     public:
@@ -138,12 +134,7 @@ namespace BuilderDP
 
         void execute();
 
-    
     private:
-        
     };
-    
-
 
 }
-

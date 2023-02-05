@@ -15,3 +15,10 @@ target_include_directories(BUILDER
           )
 
 
+if(PACKAGE_TESTS)
+    enable_testing()
+    include(GoogleTest)
+    add_subdirectory(builder_test)
+endif()
+
+

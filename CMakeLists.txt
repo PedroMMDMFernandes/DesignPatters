@@ -7,6 +7,20 @@ project(DesignPatterns)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
+#GTest inclusion
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/v1.13.0.zip
+)
+
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
+option(PACKAGE_TESTS "Build the tests" ON)
+enable_testing() # Must be in main file
+
+
 #specify sources
 set(DESIGNPATTERNS_SOURCES 
     main.cpp
